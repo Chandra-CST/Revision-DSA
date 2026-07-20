@@ -50,3 +50,29 @@ class main{
 
         System.out.println(found);
     }
+
+import java.util.Scanner;
+class main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size of your array: ");
+        int n = sc.nextInt();
+        int [] arr = new int [n];
+
+        System.out.print("Enter your elements:");
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Enter the element you want to target:");
+        int target = sc.nextInt();
+        int index = -1;
+        for(int i = 0; i < n; i++){
+            if(arr[i] == target){
+                index = i;
+            }
+        }
+        System.out.println(index);
+    }
+}
