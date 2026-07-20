@@ -4,4 +4,4 @@
 # Day 2 : Arrays and loops.
 # Day 3 : Largest and Smallest Number.
 # Day 4 : Traversal + Best so far and Acummulative patterns
-. DAY 5 : Counter pattern
+# DAY 5 : Counter pattern
