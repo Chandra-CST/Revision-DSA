@@ -5,3 +5,4 @@
 # Day 3 : Largest and Smallest Number.
 # Day 4 : Traversal + Best so far and Acummulative patterns
 # DAY 5 : Counter pattern + Two pointer pattern basics
+# DAY 6 : Revision
