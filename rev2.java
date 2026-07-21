@@ -1,4 +1,4 @@
-}Q1: Take 2 input integers and find their product:
+Q1: Take 2 input integers and find their product:
 import java.util.Scanner;
 class main{
     public static void main(String [] args){
@@ -26,14 +26,16 @@ class main{
         System.out.print("Welcome " + s + "! ");
     }
 }
-q3: Task
+Q3: Task
 
 Write a program that:
 
-Takes the size of the array (n).
-Creates an array of size n.
-Takes all n elements as input.
-Prints all the elements on one line, separated by a space.
+// Takes the size of the array (n).
+// Creates an array of size n.
+// Takes all n elements as input.
+// Prints all the elements on one line, separated by a space. 
+
+
 import java.util.Scanner;
 class main{
     public static void main(String [] args){
