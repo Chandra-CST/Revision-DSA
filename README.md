@@ -6,3 +6,5 @@
 # Day 4 : Traversal + Best so far and Acummulative patterns
 # DAY 5 : Counter pattern + Two pointer pattern basics
 # DAY 6 : Revision(Array handling,Traversal, Pattern Recognition such as Accumulative,Counter,Two POinter)
+# Day 7 : Finishes all of the revision.
+# Day 8 : Starting arrays
