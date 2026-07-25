@@ -1,4 +1,4 @@
-// Pattern: Traversal
+ Pattern: Traversal
 import java.util.Scanner;
 class main{
     public static void main(String [] args){
@@ -14,7 +14,7 @@ class main{
         System.out.print("Digit count: " + count);
     }
 }
-// Palindrome:
+ Palindrome:
 import java.util.Scanner;
 class main{
     public static void main(){
@@ -35,7 +35,7 @@ class main{
             System.out.print("Not Palindrome");
             }
         }
-//   Armstrong Number:
+   Armstrong Number:
 import java.util.Scanner;
 class main{
     public static void main(String [] args){
@@ -79,7 +79,7 @@ class main{
         }
         }
     }
-// Divisor Problem:
+ Divisor Problem:
 class main{
     public static void main(String [] args){
         int n = 654;
