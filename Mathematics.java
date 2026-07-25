@@ -25,7 +25,7 @@ class main{
         int reverse = 0;
 
         while(num > 0){
-            int digit = num % 10;                     (% helps in extracting the digits, simply put i gives us a remainder which is the last di)
+            int digit = num % 10;                     (% helps in extracting the digits, simply put i gives us a remainder which is the last digit)
             reverse = reverse * 10 + digit;
             num = num/10;
         }
@@ -79,3 +79,44 @@ class main{
         }
         }
     }
+// Divisor Problem:
+class main{
+    public static void main(String [] args){
+        int n = 654;
+
+        for(int i = 1; i <= n; i++){
+            if(n % i == 0){
+                System.out.println(i);
+            }
+        }
+    }
+}
+Prime Numbers:
+import java.util.Scanner;
+class main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a value: ");
+        boolean isPrime = true;
+        int n = sc.nextInt();
+
+        if (n <= 1){
+            isPrime = false;
+        }
+
+        for(int i = 2; i <= Math.sqrt(n); i++){
+            if(n % i == 0){
+                isPrime = false;
+                break;
+            }
+        }
+
+        if(isPrime){
+            System.out.print("Prime!");
+        }
+        else{
+            System.out.print("Not Prime!");
+        }
+    }
+}
