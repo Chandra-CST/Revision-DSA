@@ -252,3 +252,20 @@ class soe{
         System.out.println(result);
     }
 }
+
+// Exponents and Power iN jAVA:
+
+class soe{
+    static int expo(int base, int n){
+        int answer = 1;
+
+        for(int i = 1; i <= n; i++){
+            answer = answer * base; 
+        }
+        return answer;
+    }
+    public static void main(String [] args){
+        int result = expo(5,20);
+        System.out.println(result);
+    }
+}
