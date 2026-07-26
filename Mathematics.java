@@ -1,4 +1,4 @@
- Pattern: Traversal
+ // Pattern: Traversal
 import java.util.Scanner;
 class main{
     public static void main(String [] args){
@@ -14,7 +14,9 @@ class main{
         System.out.print("Digit count: " + count);
     }
 }
-Pattern : Palindrome:
+
+// Pattern : Palindrome:
+
 import java.util.Scanner;
 class main{
     public static void main(){
@@ -36,7 +38,7 @@ class main{
             }
         }
  
-  - Armstrong Number:
+  // - Armstrong Number:
 
 import java.util.Scanner;
 class main{
@@ -82,7 +84,7 @@ class main{
         }
     }
 
--  Divisor Problem:
+//  -  Divisor Problem:
 
   class main{
     public static void main(String [] args){
@@ -96,7 +98,7 @@ class main{
     }
 }
 
-- Prime Numbers: 
+//  - Prime Numbers: 
 
 import java.util.Scanner;
 class main{
@@ -127,7 +129,7 @@ class main{
     }
 }
 
-- Prime number and counting the primes:
+// - Prime number and counting the primes:
 
 import java.util.Scanner;
 
@@ -166,7 +168,9 @@ class Main {
         System.out.println("Number of primes: " + count);
     }
 }
+
 // Sieve of Eratosthenes:
+
 class soe{
     public static void main(String [] args){
 
@@ -196,4 +200,35 @@ class soe{
 }
 
 
-// 
+// GCD -    Eucledian Algorithm:
+// LCM -    USing GCD :- The relationship:
+
+//    LCM × GCD = a × b
+//          LCM = a x b / (GCD)
+
+ 
+class soe{ 
+    static int gcd(int a , int b){
+    while(b != 0){ 
+
+        int remainder = a % b;
+
+        a = b;
+
+        b = remainder;
+    }
+    return a;
+}
+     static int lcm(int a, int b){
+       int res = (a * b) / gcd(a, b);
+
+       return res;
+    }
+    public static void main(String [] args){
+        int result = gcd(48 , 18);
+        int lcmresult = lcm(8 , 12);
+
+        System.out.println(result);
+        System.out.println(lcmresult);
+    }
+}
