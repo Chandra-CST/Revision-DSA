@@ -232,3 +232,23 @@ class soe{
         System.out.println(lcmresult);
     }
 }
+
+// Factorials :
+
+class soe{
+    static long factorial(int n){
+        long factorial = 1;
+
+        for(int i = 1; i <= n; i++){
+            if(i < 0){
+            System.out.println("Factorial is invalid!");
+            }
+            factorial = factorial * i;
+        }
+        return factorial;
+    }
+    public static void main(String [] args){
+        long result = factorial(4);
+        System.out.println(result);
+    }
+}
