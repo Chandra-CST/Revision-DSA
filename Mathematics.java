@@ -166,3 +166,34 @@ class Main {
         System.out.println("Number of primes: " + count);
     }
 }
+// Sieve of Eratosthenes:
+class soe{
+    public static void main(String [] args){
+
+        int n = 20;
+
+        boolean [] arr = new boolean[n + 1];
+
+        for(int i = 0; i <= n; i++ ){
+            arr[i] = true;
+        }
+        arr[0] = false;
+        arr[1] = false;
+
+        for(int i = 2; i <= Math.sqrt(n); i++){
+            if(arr[i] == true){
+                for(int j = i*i ; j <= n; j += i){
+                    arr[j] = false;
+                }
+            }
+        }
+        for(int i = 0; i <= n; i++){
+            if(arr[i] == true){
+            System.out.print(i + " ");
+            }
+        }
+    }
+}
+
+
+// 
