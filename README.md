@@ -9,3 +9,5 @@
 - Day 7 : Finishes all of the revision.
 - Day 8 : Starting arrays
 - Day 9 : Mathematical problems such as palidrome,prime numbers,Divisors,traversal as well as pattern recognition
+- Day 10 : ---
+- Day 11 : Fibonacci series
