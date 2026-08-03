@@ -3,7 +3,7 @@ class CountLessThanLast{
 
         int[] arr = {15, 8, 25, 10, 30, 18};
 
-        int last = arr[5];
+        int last = arr[arr.length - 1];
         int count = 0;
 
         for(int i = 0; i < arr.length; i++){
