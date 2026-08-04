@@ -13,7 +13,7 @@ class SumOfMultiplesOf5{
             }
         }
         System.out.println(count);
-        
+
         System.out.println(sum);
     }
 }
