@@ -13,6 +13,10 @@ class SecondLargestOddElement{
                 largest = arr[i];
                 secondLargest = temp;
             }
+            if( arr[i] % 2 != 0 && arr[i] < largest && arr[i] > secondLargest){
+                secondLargest = arr[i];
+
+            }
         }
         System.out.println(secondLargest);
     }
