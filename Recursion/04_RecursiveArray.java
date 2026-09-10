@@ -52,15 +52,25 @@ class Recursion{
         }
         return 1 + count(n / 10);
     }
+ 
+    static int fib(int n){
+        if(n == 0) {
+            return 0;
+        }
+        if( n == 1 ) {
+            return 1;
+        }
+        return fib(n - 1) + fib(n - 2);
+    }
 
-    
     public static void main(String[] args){
         // int[] arr = {5,10,15,20};
         // System.out.println(search(arr,0,23));
         // // System.out.println(searching(arr,0,20));
         // System.out.println(isPalindrome("listen", 0, 4));
-        int n = 456;
-        System.out.println(sumDigits(n));
-        System.out.println(count(n));
+        // int n = 10;
+        System.out.println(fib(5));
+        // System.out.println(sumDigits(n));
+        // System.out.println(count(n));
     }
 }
