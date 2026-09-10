@@ -1,5 +1,13 @@
 class Recursion{
 
+    static int sumDigits(int n){
+        if(n == 0){
+            return 0;
+        }
+        return (n % 10) + sumDigits(n / 10);
+
+    }
+
     static boolean isPalindrome(String str, int left, int right){
 
         if(left >= right){
@@ -36,10 +44,23 @@ class Recursion{
         return search(arr, index + 1, target);
 
     }
+    
+    
+    static int count(int n){
+        if(n == 0){
+            return 0;
+        }
+        return 1 + count(n / 10);
+    }
+
+    
     public static void main(String[] args){
         // int[] arr = {5,10,15,20};
         // System.out.println(search(arr,0,23));
-        // System.out.println(searching(arr,0,20));
-        System.out.println(isPalindrome("listen", 0, 4));
+        // // System.out.println(searching(arr,0,20));
+        // System.out.println(isPalindrome("listen", 0, 4));
+        int n = 456;
+        System.out.println(sumDigits(n));
+        System.out.println(count(n));
     }
 }
