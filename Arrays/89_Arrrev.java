@@ -41,13 +41,44 @@ class Arrrrev {
 
         return -1;
     }
+    
+    static int binarySearch(int [] arr, int target){
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+
+            if (arr[mid] == target){
+                return mid;
+            }
+
+            if (arr[mid] < target) {
+                left = mid + 1;
+            }
+            else if (arr[mid] > target) {
+                right = mid - 1;
+            }
+            else {
+                return mid;
+            }
+        }
+
+        return - 1;
+    } 
     public static void main(String[] args) {
 
-        int[] arr = {10, 25, 7, 42, 19};
+        int[] arr = {3, 8, 12, 17, 25, 31, 44};
 
-        int target = 42;
+        System.out.println(binarySearch(arr, 25));
 
-        System.out.println(LinearSearch(arr, target));
+
+        // int[] arr = {10, 25, 7, 42, 19};
+
+        // int target = 42;
+
+        // System.out.println(LinearSearch(arr, target));
 
         // int[] arr = {10, 20, 15, 8, 25};
 
