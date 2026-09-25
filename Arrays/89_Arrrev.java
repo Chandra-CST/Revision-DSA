@@ -105,6 +105,24 @@ class Arrrrev {
             
         }
     }
+    
+    static void insertionSort(int[] arr){
+
+        for(int i = 1; i < arr.length; i++){
+            int key = arr[i];
+
+            int j = i -1;
+
+            while(j >= 0 && key < arr[j]){
+
+                arr[j + 1] = arr[j];
+
+                j--;
+            }
+            arr[j + 1] = key;
+            }
+        }
+
     public static void main(String[] args) {
 
         // Largest
@@ -135,5 +153,12 @@ class Arrrrev {
         selectionSort(arr5);
         
         System.out.println("Selection Sort: " + Arrays.toString(arr5));
+
+        // Insertion Sort
+        int[] arr6 = {5, 3, 8, 1, 2};
+
+        insertionSort(arr6);
+
+        System.out.println("Insertion Sort: " + Arrays.toString(arr6));
     }
-}
+    }
