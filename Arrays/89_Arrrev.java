@@ -91,6 +91,20 @@ class Arrrrev {
         }
     }
 
+    static void selectionSort(int[] arr){
+        for(int i = 0; i < arr.length - 1; i++){
+            int minIndex = i;
+            for(int j = i + 1; j < arr.length; j++){
+                if(arr[j] < arr[minIndex]){
+                    minIndex = j;
+                }
+            }
+             int temp = arr[i];
+              arr[i] = arr[minIndex];
+              arr[minIndex] = temp;
+            
+        }
+    }
     public static void main(String[] args) {
 
         // Largest
@@ -114,5 +128,12 @@ class Arrrrev {
         bubbleSort(arr4);
 
         System.out.println("Bubble Sort: " + Arrays.toString(arr4));
+ 
+        // Selection Sort
+        int[] arr5 = {5, 3, 8, 1, 2};
+
+        selectionSort(arr5);
+        
+        System.out.println("Selection Sort: " + Arrays.toString(arr5));
     }
 }
