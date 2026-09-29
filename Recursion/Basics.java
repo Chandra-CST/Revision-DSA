@@ -39,7 +39,6 @@ class Basics{
 
 
     // factorial:
-
     static int fact(int num2){
         if(num2 == 0){
             return 1;
@@ -47,11 +46,43 @@ class Basics{
         return num2 * fact(num2 - 1);
     }
 
+    // Reversing a string using recursion but using a single pointer only:
+    static void printArray(int[] arr, int i, int n){
+        if(i >= n/2){
+            return;
+        }
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+
+        printArray(arr, i + 1, n);
+    }
+
+    // Reversinng a string using two pointers:
+    static void reverseArray(int left, int right, int[] arr){
+        if(left == right){
+            return;
+        }
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+
+        reverseArray( left + 1, right - 1, arr);
+    }
+    
     public static void main(String[] args){
         printNumber(5);
         printNum(5);
         printName(3);
-        System.out.println("The sum of the recursive function is : " + sum(5));
+        System.out.println("The sum is : " + sum(5));
         System.out.println("The factorial is: " + fact(4));
+
+        int[] arr = {1,2,3,4,5};
+        printArray(arr, 0, arr.length);
+        System.out.println(java.util.Arrays.toString(arr));
+
+        int[] arr2 = {22,11,33,44,55};
+        reverseArray(0, arr2.length - 1, arr2);
+        System.out.println(java.util.Arrays.toString(arr2));
     }
 }
