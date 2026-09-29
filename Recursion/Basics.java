@@ -29,9 +29,29 @@ class Basics{
 
     }
 
+    // sum using recursion function:
+    static int sum(int num1){
+        if(num1 == 0){
+            return 0;
+        }
+        return num1 + sum(num1-1);
+    }
+
+
+    // factorial:
+
+    static int fact(int num2){
+        if(num2 == 0){
+            return 1;
+        }
+        return num2 * fact(num2 - 1);
+    }
+
     public static void main(String[] args){
         printNumber(5);
         printNum(5);
-        printName(10);
+        printName(3);
+        System.out.println("The sum of the recursive function is : " + sum(5));
+        System.out.println("The factorial is: " + fact(4));
     }
 }
