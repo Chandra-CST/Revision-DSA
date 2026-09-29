@@ -1,14 +1,26 @@
-class Recursion {
-
-    static void printNumbers(int num){
+class Basics{
+     
+    //  Print from 1 to N:
+    static void printNumber(int num){
         if(num == 0){
             return;
         }
+        printNumber(num - 1);
         System.out.println(num);
-        printNumbers(num - 1);
     }
-    public static void main(String[] args){
-       printNumbers(5);
-    }
+    
+    // print from N to 1:
+    static void printNum(int n){
+        if( n == 0 ){
+            return ;
+        }
+        System.out.println(n);
+        printNum(n -1);
 
+    }
+    
+    public static void main(String[] args){
+        printNumber(5);
+        printNum(5);
+    }
 }
