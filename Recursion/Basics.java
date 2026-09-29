@@ -19,8 +19,19 @@ class Basics{
 
     }
     
+    // print a name N times:
+    static void printName(int x){
+        if(x == 0){
+            return;
+        }
+        System.out.println("Chandra");
+        printName(x - 1);
+
+    }
+
     public static void main(String[] args){
         printNumber(5);
         printNum(5);
+        printName(10);
     }
 }
