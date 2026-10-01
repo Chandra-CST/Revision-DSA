@@ -18,6 +18,7 @@ class Recursion{
 
     }
     
+    // Sequences usinng recursion function:
     static void sequence(String str, int index, String current){
         if(index == str.length()){
             System.out.println(current);
@@ -36,7 +37,34 @@ class Recursion{
         );
 
     }
+    
 
+    // Pointing subsequences whose sum is k:
+    static void subsequences(int[] arr, int index, String current, int sum, int k){
+        if(index == arr.length){
+            if(sum == k){
+                System.out.println(current);
+            }
+            return;
+        }
+        subsequences(
+            arr,
+            index + 1,
+            current + arr[index] + " ",
+            sum + arr[index],
+            k
+        );
+
+        subsequences(
+            arr,
+            index + 1,
+            current,
+            sum,
+            k
+        );
+
+
+    }
     public static void main(String[] args){
         String str = "MadaM";
         boolean result = isPalindrome(str, 0, str.length() - 1);
@@ -46,5 +74,10 @@ class Recursion{
 
         str = "abc";
         sequence(str, 0, "");
+        
+        int[] arr = {1,2,1};
+        int k = 2;
+
+        subsequences(arr, 0, "", 0, k);
     }
 }
